@@ -23,10 +23,11 @@
                     Menu
                     <svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path></svg><!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com -->
                 </button>
-                <a class="navbar-brand" href="#page-top"></a>
+                <a class="navbar-brand" href="#page-top">Genus X</a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link text-white-50" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white-50" href="#graphs">Graphs</a></li>
                         <li class="nav-item"><a class="nav-link text-white-50" href="#ourproject">Our Project</a></li>
                         <li class="nav-item"><a class="nav-link text-white-50" href="#TEAM">Team</a></li>
                     </ul>
@@ -61,8 +62,9 @@
             </div>
         </section>
         <!-- Projects-->
+        <h1 class="fw-light text-white" style="text-align: center;" id="graphs"><br><br>Visuals</h1>
               <!-- Content section 1-->
-        <section id="ourproject">
+        <section >
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
@@ -71,7 +73,7 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4; text-white" style="font-weight: 800">Popularity to Tempo</h2>
-                            <p class="text-white-50">Starting off our project, we were trying to get as much data from the dataset as possible. To make it easier, we used different graphs that represent correlations between data columns inside the dataset. On this bar graph, we can see the correlation between the song tempo that is most commonly used in each individual genre and the popularity of that song.  </p>
+                            <p class="text-white-50">Starting off our project, we were trying to get as much data from the dataset as possible. To make it easier, we used different graphs that represent correlations between data columns inside the dataset. On this graph, we can see the correlation between the song tempo that is most commonly used in each individual genre and the popularity of that song.  </p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +88,7 @@
                     </div>
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
-                            <h2 class="display-4; text-white" style="font-weight: 800; text-align: right">Loudness to Tempo</h2>
+                            <h2 class="display-4; text-white" style="font-weight: 800;">Loudness to Tempo</h2>
                             <p class="text-white-50" style="text-align:left">This scatterplot helps to show the massive overlap between certain features of songs, in this case tempo and loudness. While there are some clear clusters of genres at certain loudness ranges, many genres overlap throughout these clusters, which makes it especially difficult for a computer to differentiate between genres.</p>
                         </div>
                     </div>
@@ -98,12 +100,12 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="https://media.discordapp.net/attachments/990085279295602718/996112983719673917/unknown.png" alt="..." /></div>
+                        <div class="p-5 " style="width:725px; height:625px;"><iframe class="img-fluid " src="assets/scatter_3d.html" alt="..." style="width:121%; height:120%;"></iframe> /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4; text-white" style="font-weight: 800">EDA 3</h2>
-                            <p class="text-white-50">Interesting EDA 3 information.</p>
+                            <h2 class="display-4; text-white" style="font-weight: 800">Duration to Loudness to Popularity</h2>
+                            <p class="text-white-50">This 3d scatterplot takes into account song duration, loudness, and popularity on the x-y-z axis as well as a song's energy determining the size of the point. Although there still is overlap, this helps to show that as more variables are taken into account, each song begins to appear as more unique, allowing more patterns to be seen across genres.</p>
                         </div>
                     </div>
                 </div>
@@ -113,29 +115,56 @@
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="https://media.discordapp.net/attachments/990085279295602718/996112983719673917/unknown.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5" style="width:725px; height:625px;"><iframe class="img-fluid" src="assets/heat_map.html" alt="..." style="width:100%; height:120%;"></iframe> /></div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
-                            <h2 class="display-4; text-white" style="font-weight: 800">EDA 4</h2>
-                            <p class="text-white-50">Interesting EDA 4 information.</p>
+                            <h2 class="display-4; text-white" style="font-weight: 800">Heat Map of All Variables</h2>
+                            <p class="text-white-50">Here is a heat map that shows the correlation between different variables in each song. Some variables show greater correlation than others, such as energy and loudness, while other variables are less correlated. Greater correlation would make it easier to find patterns across genres, so because there are many variables with correlation close to zero, the computer will have a difficult time comparing many of the song parameters.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
               <br>
-       
+                <h1 class="fw-light text-white" style="text-align: center; font-weight: 1000" id="ourproject"><br><br>Our Project</h1>
                 <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+                    <div class="col-lg-6"><img style="filter: invert(.85); width:100%"class="img-fluid" src="https://pimages.toolbox.com/wp-content/uploads/2022/04/11040522/46-4.png"  alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">ML</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <h4 class="text-white">Logistic Regression</h4>
+                                    <p class="mb-0 text-white-50">&nbsp;Logistic Regression is a Machine Learning classification algorithm that &nbsp;is used to predict the probability of a categorical dependent variable.
+In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.).</p>
+                                    <br><h4 class="text-white">Types of LR</h4>
+                                    <p class="mb-0 text-white-50">When we talk about Logistic Regression in general, we usually mean Binary logistic regression, although there are other types of Logistic Regression as well.
+Logistic Regression can be divided into types based on the type of classification it does. With that in view, there are 3 types of Logistic Regression. Let’s talk about each of them:<!--<ul> 
+  <li> class="mb-0 text-white-50" Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>   -->
+                                  </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Multinomial Logistic Regression
+ </h4>
+                                    <p class="mb-0 text-white-50">Multinomial Logistic Regression deals with cases when the target or independent variable has three or more possible values.
+<b>For example,</b> the use of Chest X-ray images as features that give indication about one of the three possible outcomes (No disease, Viral Pneumonia, COVID-19). The multinomial Logistic Regression will use the features to classify the example into one of the three possible outcomes in this case. There can of course be more than three possible values of the target variable. in our case, there are <b>10</b>.
+</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -143,8 +172,54 @@
                     </div>
                 </div>
                 <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Naive Bayes </h4>
+                                    <p class="mb-0 text-white-50">&nbsp;About  Naive Bayes :
+Native Bayes is a machine learning model for classification that uses the Bayes Theorem(	<img style="filter: invert(1);" src="https://s0.wp.com/latex.php?latex=%5Ctextrm%7BP%28H+%5Ctextbar+E%29+%3D+%7D+%C2%A0%5Cfrac%7B%5Ctextrm%7B+P%28E+%5Ctextbar+H%29+%2A+P%28H%29%7D%7D+%7B%5Ctextrm%7BP%28E%29%7D%7D&bg=ffffff&fg=000&s=0&c=20201002" alt="img" width="200"/>	)<br>- P(H) is the probability of hypothesis H being true. This is known as the prior probability.<br>- P(E) is the probability of the evidence(regardless of the hypothesis).<br>- P(E|H) is the probability of the evidence given that hypothesis is true.<br>- P(H|E) is the probability of the hypothesis given that the evidence is there.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project three Row-->
+                <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Classification Trees</h4>
+                                    <p class="mb-0 text-white-50">&nbsp;About Classification Trees:<br> 
+
+Decision Trees \(DTs\) are a non\-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
+<br>
+<br> Pros
+<br>- Simple to understand and to interpret. Trees can be visualized.
+<br>- Requires little data preparation.
+<br>- Able to handle both numerical and categorical data.
+<br>- Possible to validate a model using statistical tests.
+<br>
+<br> Cons
+<br>- Decision\-tree learners can create over\-complex trees that do not generalize the data well.
+<br>- Decision trees can be unstable because small var iations in the data might result in a completely different tree being generated
+<br>- Predictions of decision trees are neither smooth nor continuous, but piecewise constant approximations as seen in the above figure.
+<br>- Decision tree learners create biased trees if some classes dominate.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <!-- Project four Row-->
+                <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -156,6 +231,23 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- Project five Row-->
+                <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Logistic Regression</h4>
+                                    <p class="mb-0 text-white-50">&nbsp;Logistic Regression is a Machine Learning classification algorithm that &nbsp;is used to predict the probability of a categorical dependent variable.
+In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.).</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
                 </div>
       
       <!-- MEET OUR TEAM SECTION -->
@@ -196,7 +288,7 @@ IBRACORP writer, tester and helper!"</div>
         <img src="images/Ryan-C-pic.jpg" height="300px"class="rounded" alt="...">
         <div class="card-body text-center bg-dark">
           <h5 class="card-title mb-0 text-white-50">Ryan Cuccurullo</h5>
-          <div class="card-text text-white-50">Some Dude Who Likes Soup</div>
+          <div class="card-text text-white-50">Front End<br>some dude who likes π</div>
         </div>
       </div>
     </div>
@@ -245,8 +337,8 @@ IBRACORP writer, tester and helper!"</div>
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0 text-white-50">Address</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-white-50">2627 Hanover Street,
-Palo Alto, CA 94304</div>
+                                <div class="small text-white-50"><a href = "https://goo.gl/maps/u7XrRwd8rqcVQHmc7">2627 Hanover Street,
+Palo Alto, CA 94304</a></div>
                             </div>
                         </div>
                     </div>
@@ -256,7 +348,7 @@ Palo Alto, CA 94304</div>
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0 text-white-50">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-white-50">--> <a href="#!">hello@ai-camp.org</a></div>
+                                <div class="small text-white-50">hello@ai-camp.org</div>
                             </div>
                         </div>
                     </div>
