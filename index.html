@@ -12,6 +12,7 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -39,7 +40,7 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Genus X</h1>
+                        <h1 class="mx-auto my-0 text-uppercase">Genus <span style="font-family: Sofia; color:#FFF">X</span></h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Classify music genre using machine learning.</h2>
                         <a class="btn btn-primary" href="#about">Learn More</a>
                     </div>
@@ -116,7 +117,7 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-5" style="width:725px; height:625px;"><iframe class="img-fluid" src="assets/heat_map.html" alt="..." style="width:100%; height:120%;"></iframe> /></div>
+                        <div class="p-5" style="width:725px; height:625px; overflow: hidden;"><iframe class="img-fluid" src="assets/heat_map.html" alt="..." style="width:120%; height:120%;"></iframe> /></div>
                     </div>
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
@@ -139,14 +140,8 @@
                                     <h4 class="text-white">Logistic Regression</h4>
                                     <p class="mb-0 text-white-50">&nbsp;Logistic Regression is a Machine Learning classification algorithm that &nbsp;is used to predict the probability of a categorical dependent variable.
 In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.).</p>
-                                    <br><h4 class="text-white">Types of LR</h4>
-                                    <p class="mb-0 text-white-50">When we talk about Logistic Regression in general, we usually mean Binary logistic regression, although there are other types of Logistic Regression as well.
-Logistic Regression can be divided into types based on the type of classification it does. With that in view, there are 3 types of Logistic Regression. Let’s talk about each of them:<!--<ul> 
-  <li> class="mb-0 text-white-50" Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>   -->
-                                  </p>
+                                    <br><h4 class="text-white">Multinomial Logistic Regression</h4>
+                                    <p class="mb-0 text-white-50">Multinomial Logistic Regression is a type of Logistic Regression that deals with cases when the target or independent variable has three or more possible values. In our case, there are <b>10</b>. </p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -155,25 +150,52 @@ Logistic Regression can be divided into types based on the type of classificatio
                   
                 </div>
                 <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
-                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%; filter: invert(.85);" src="https://www.statstest.com/wp-content/uploads/2020/05/Multinomial-Logistic-Regression-1-1024x676.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Multinomial Logistic Regression
+                                    <h4 class="text-white">Pros and Cons of LR
  </h4>
-                                    <p class="mb-0 text-white-50">Multinomial Logistic Regression deals with cases when the target or independent variable has three or more possible values.
-<b>For example,</b> the use of Chest X-ray images as features that give indication about one of the three possible outcomes (No disease, Viral Pneumonia, COVID-19). The multinomial Logistic Regression will use the features to classify the example into one of the three possible outcomes in this case. There can of course be more than three possible values of the target variable. in our case, there are <b>10</b>.
-</p>
+                                    <h3 class="mb-0 text-white-50"><b>Pros:</b>
+</h3>
+                                  <p class="mb-0 text-white-50"> - Logistic regression is easier to implement, interpret, and very efficient to train.</p>
+                                  <p class="mb-0 text-white-50"> - Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.</p>
+                                  <p class="mb-0 text-white-50"> - It can easily extend to multiple classes(multinomial regression) and a natural probabilistic view of class predictions.</p>
+                                  <h3 class="mb-0 text-white-50"><b>Cons:</b></h3>
+<p class="mb-0 text-white-50"> - It can only be used to predict discrete functions. (Classes)
+  
+                                  </p>
+                                  <p class="mb-0 text-white-50"> - It constructs linear boundaries. (In opposed to curvilinear)</p>
+                                  <p class="mb-0 text-white-50"> - It is tough to obtain complex relationships using logistic regression.</p>
+                                  
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+      
+      
+                <!-- Project two Row-->
                 <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
-                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="https://sun9-82.userapi.com/impg/hE6ehA9IQ7LWOO8dXIKs5nGB5BgqdsBeIcc-lg/av5R0boal5w.jpg?size=532x375&quality=96&sign=48e7555924ab3565064067bbc6e5241e&type=album" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Accuracy of Logistic Regression</h4>
+                                    <p class="mb-0 text-white-50">Confusion matrix on the right, you can see the accuracy of Logistic Regression model that we used for the data set. On the y-axis are the actual values, and on the x-axis are predictions of these genres that were made used by the LR model. Thus, the higher the number is, the more accurate the predictions are. From this graph, we can see that <b>the most accurate</b> predictions were made for Classical music, and <b> the least accurate</b>for Alternative music.  </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <!-- Project three Row-->
+                <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%; filter:invert(.85);" src="https://editor.analyticsvidhya.com/uploads/23385Capture6.PNG" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -187,9 +209,12 @@ Native Bayes is a machine learning model for classification that uses the Bayes 
                         </div>
                     </div>
                 </div>
-                <!-- Project three Row-->
+
+
+      
+                <!-- Project four Row-->
                 <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
-                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="https://cocalc13.ai-camp.dev/afffd160-11c4-4b0e-8185-cf29c729cf98/raw/.smc/jupyter/blobs/a.png?sha1=b19e2852814556100325f12d068297e63a656c14&attempts=0" alt="..." /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -197,7 +222,7 @@ Native Bayes is a machine learning model for classification that uses the Bayes 
                                     <h4 class="text-white">Classification Trees</h4>
                                     <p class="mb-0 text-white-50">&nbsp;About Classification Trees:<br> 
 
-Decision Trees \(DTs\) are a non\-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
+Decision Trees \(DTs\) are a non\-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. A tree can be seen as a piecewise constant approximation.
 <br>
 <br> Pros
 <br>- Simple to understand and to interpret. Trees can be visualized.
@@ -217,7 +242,7 @@ Decision Trees \(DTs\) are a non\-parametric supervised learning method used fo
                     </div>
                   
                 </div>
-                <!-- Project four Row-->
+                <!-- Project five Row-->
                 <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
                     <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -232,23 +257,7 @@ Decision Trees \(DTs\) are a non\-parametric supervised learning method used fo
                         </div>
                     </div>
                 </div>
-                <!-- Project five Row-->
-                <div class="row gx-0 justify-content-center" style="border: 2px solid rgba(255, 0, 203, 0.9);">
-                    <div class="col-lg-6"><img class="img-fluid" style="width:100%" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Logistic Regression</h4>
-                                    <p class="mb-0 text-white-50">&nbsp;Logistic Regression is a Machine Learning classification algorithm that &nbsp;is used to predict the probability of a categorical dependent variable.
-In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.).</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                </div>
+
       
       <!-- MEET OUR TEAM SECTION -->
         <!-- Header -->
