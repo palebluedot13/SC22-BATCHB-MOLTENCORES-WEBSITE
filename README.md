@@ -2,7 +2,7 @@
 Website for Music Genre
 Team Members:
 Ryan C, 
-Ryand R, 
+Ryan R, 
 Richard, 
 Nadia, &
 Ilya
