@@ -378,7 +378,14 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
-input,
+input[type=text] {
+  width: 100%;
+  border: 2px solid redrgba(149, 12, 12, 0.6);
+  background-color: #222222;
+  color: #FFF;
+}
+
+/* input,
 button,
 select,
 optgroup,
@@ -420,7 +427,7 @@ button:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
   cursor: pointer;
-}
+} */
 
 ::-moz-focus-inner {
   padding: 0;
@@ -1442,6 +1449,12 @@ progress {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+  }
+
+  .col-lg-6-border {
+    flex: 0 0 auto;
+    width: 50%;
+    border-right: 2px solid rgba(149, 12, 12, 0.6);
   }
 
   .col-lg-7 {
@@ -7423,7 +7436,17 @@ fieldset:disabled .btn {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border:  2px solid rgba(255, 0, 203, 0.9) !important;
+}
+
+.border-r {
+  border-right: 2px solid rgba(255, 255, 255, 0.6) !important;
+  z-index: 100;
+}
+
+.border-l {
+  border-left: 2px solid rgba(255, 255, 255, 0.6) !important;
+  z-index: 100;
 }
 
 .border-0 {
@@ -12009,11 +12032,15 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
-.masthead span,
 .masthead .span{
   padding-left: 10px;
-  background: #fff;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(rgba(255, 0, 155, 0.9), rgba(149, 12, 12, 0.6));;
+  -webkit-text-stroke-color: transparent;
+  
+  
+  -webkit-text-stroke-width: 5px;
+
+  -webkit-text-fill-color: #000;
   -webkit-background-clip: text;
   background-clip: text;
 }
